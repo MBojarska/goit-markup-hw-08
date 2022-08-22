@@ -1,0 +1,36 @@
+.client {
+  display: flex;
+  width: 170px;
+}
+
+.our-clients {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+
+  &__icon {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1bb;
+    border-radius: 8px;
+    padding: 15px 30px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    & * {
+      fill: #afb1b8;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover * {
+      fill: #2196f3;
+    }
+
+    &:hover {
+      border: 1px solid #2196f3;
+      fill: #2196f3;
+      cursor: pointer;
+    }
+  }
+}

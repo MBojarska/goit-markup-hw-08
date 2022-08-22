@@ -1,0 +1,31 @@
+.lorem {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    width: 270px;
+    padding-right: 30px;
+  }
+
+  &__header {
+    padding-top: 30px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: var(--agency-mediumgrey);
+  }
+
+  &__svg {
+    width: 270px;
+    height: 120px;
+  }
+
+  &__icon {
+    display: flex;
+    background-color: var(--agency-svg-grey);
+  }
+}

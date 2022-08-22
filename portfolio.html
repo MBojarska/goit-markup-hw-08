@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+  <link rel="stylesheet" href="./sass/main.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="portfolio">
+  <header class="portfolio-header">
+    <div class="container page-top">
+      <!--Logo w <header> i stopce to link z tekstem, a nie obraz.-->
+      <a href="/" class="webstudio-top"><span class="adress-footer__web">Web</span><span class="studio-top">Studio</span></a>
+      <nav>
+        <!-- Nawigacja do innych sekcji -->
+        <ul class="navigation">
+          <li class=" navigation__item"><a class="navigation__link" href="index.html">Agencja</a></li>
+          <li class=" navigation__item"><a class="navigation__link active" href="portfolio.html">Portfolio</a></li>
+          <li class=" navigation__item"><a class="navigation__link" href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <ul class="contact">
+        <!-- Link do adresu e-mail  -->
+        <li>
+          <div class="contact__top">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg width="16px" height="12px" class="contact__icon">
+                <use href="./images/icon.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a>
+          </div>
+        </li>
+        <!-- Link do numeru telefonu -->
+        <li>
+          <div class="contact__top">
+            <a class="contact__link" href="tel:+48111111111">
+              <svg width="10px" height="16px" class="contact__icon">
+                <use href="./images/icon.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="container">
+        <ul class="sort">
+          <li><button type="button">Wszystko</button></li>
+          <li><button type="button">Strony</button></li>
+          <li><button type="button">Aplikacje</button></li>
+          <li><button type="button">Design</button></li>
+          <li><button type="button">Marketing</button></li>
+        </ul>
+      </div>
+      <div class="container works-container">
+        <ul class="works">
+          <li class="works__item">
+            <div class="box">
+                <div class="box__overlay">
+                  <p class="box__description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
+                    koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone
+                    serwery konkurencji</p>                </div>
+              <figure>
+                <img src="https://github.com/MBojarska/Goit-hw-02/blob/main/images/images/page1%20(1).jpg?raw=true"
+                  alt="Laptop z otwartą stroną internetową" width="370" height="294" />
+
+
+                <figcaption>
+                  <h4>Technocrack</h4>
+                  <p>Strona internetowa</p>
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="box">
+              <figure>
+                <img src="https://github.com/MBojarska/Goit-hw-02/blob/main/images/images/design1%20(1).jpg?raw=true"
+                  alt="Ludzie grający w koszykówkę" width="370" height="294" />
+                <div class="box__overlay">
+                  <p class="box__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nobis minima reprehenderit asperiores
+                    aspernatur unde! Veniam doloribus ipsa reiciendis corrupti.</p>
+                </div>
+                <figcaption><div class="figcaption-box">
+                  <h4>Grafika New Orlean vs Golden Star</h4>
+                  <p>Design</p></div>
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="box">
+              <figure>
+                <img src="https://github.com/MBojarska/Goit-hw-02/blob/main/images/images/app1%20(1).jpg?raw=true"
+                  alt="logo z rybą" width="370" height="294" />
+                <div class="box__overlay">
+                  <p class="box__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga repellendus nulla commodi error
+                    facilis reiciendis quibusdam cumque ratione minus? Assumenda.</p>
+                </div>
+                <figcaption>
+                  <h4>Restauracja Seafood</h4>
+                  <p>Aplikacja</p>
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="box">
+              <figure>
+                <img src="https://github.com/MBojarska/Goit-hw-02/blob/main/images/images/marketing1%20(1).jpg?raw=true"
+                  alt="Słuchawki nauszne" width="370" height="294" />
+                <div class="box__overlay">
+                  <p class="box__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum recusandae quam debitis reiciendis
+                    aliquam voluptatibus totam aut voluptates ipsum quasi.</p>
+                </div>
+                <figcaption>
+                  <h4>Projekt Prime</h4>
+                  <p>Marketing</p>
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="box">
+              <figure>
+                <img src="https://github.com/MBojarska/Goit-hw-02/blob/main/images/images/app2%20(1).jpg?raw=true"
+                  alt="Pudełka" width="370" height="294" />
+                <div class="box__overlay">
+                  <p class="box__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iste aliquam enim recusandae
+                    voluptatum soluta placeat debitis suscipit distinctio facere?</p>
+                </div>
+                <figcaption>
+                  <h4>Projekt Boxes</h4>
+                  <p>Aplikacja</p>
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="box">
+              <figure>
+                <img src="https://github.com/MBojarska/Goit-hw-02/blob/main/images/images/page2%20(1).jpg?raw=true"
+                  alt="Monitor komputera" width="370" height="294" />
+                <div class="box__overlay">
+                  <p class="box__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magnam incidunt dolorum
+                    dolores. Commodi adipisci culpa alias tempore odio atque.</p>
+                </div>
+                <figcaption>
+                  <h4>Inspiration has no borders</h4>
+                  <p>Strona internetowa</p>
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="box">
+              <figure>
+                <img src="https://github.com/MBojarska/Goit-hw-02/blob/main/images/images/design2%20(1).jpg?raw=true"
+                  alt="Książka" width="370" height="294" />
+                <div class="box__overlay">
+                  <p class="box__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti mollitia sint ullam sequi,
+                    dolores quos ipsa aperiam voluptatum nisi provident.</p>
+                </div>
+                <figcaption>
+                  <h4>Magazyn Limited edition</h4>
+                  <p>Design</p>
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="box">
+              <figure>
+                <img src="https://github.com/MBojarska/Goit-hw-02/blob/main/images/images/marketing2%20(1).jpg?raw=true"
+                  alt="TAG z literami LAB EL TAG" width="370" height="294" />
+                <div class="box__overlay">
+                  <p class="box__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum recusandae amet fugiat ab
+                    cupiditate est saepe! A rerum doloremque similique.</p>
+                </div>
+                <figcaption>
+                  <h4>Projekt LAB</h4>
+                  <p>Marketing</p>
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+
+          <li class="works__item">
+            <div class="box">
+              <figure>
+                <img src="https://github.com/MBojarska/Goit-hw-02/blob/main/images/images/app3%20(1).jpg?raw=true"
+                  alt="Ręce na klawiaturze laptopa" width="370" height="294" />
+                <div class="box__overlay">
+                  <p class="box__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vel iste voluptatibus quod iusto
+                    odio molestiae dignissimos laborum quibusdam itaque.</p>
+                </div>
+                <figcaption>
+                  <h4>Growing Business</h4>
+                  <p>Aplikacja</p>
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="container footer">
+      <div class="adress-footer">
+        <a href="/" class="adress-footer__webstudio">
+          <span class="adress-footer__web">Web</span><span class="adress-footer__studio">Studio</span></a>
+        <address id="kontakt">
+          <ul class="adress-footer__contact">
+            <li class="adress-footer__contact-item">m. Warszawa, Aleje Jerozolimskie 21</li>
+            <!-- Link do adresu e-mail  -->
+            <li class="adress-footer__contact-item">
+              <a class="adress-footer__contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <!-- Link do numeru telefonu -->
+            <li class="adress-footer__contact-item">
+              <a class="adress-footer__contact-link" href="tel:+48111111111">+48 111 111 111</a></li>
+          </ul>
+        </address>
+      </div>
+      <div class="container join-us">
+        <h4>dołącz do nas</h4>
+        <ul class="social-footer">
+          <li class="social-footer__item">
+            <a class="social-footer__item-link" href="#">
+              <svg width="20" height="20" class="social-icon">
+                <use href="./images/icon.svg#icon-instagram"></use>
+              </svg></a>
+          </li>
+          <li class="social-footer__item">
+            <a class="social-footer__item-link" href="#">
+              <svg width="20" height="20" class="social-icon">
+                <use href="./images/icon.svg#icon-twitter"></use>
+              </svg></a>
+          </li>
+          <li class="social-footer__item">
+            <a class="social-footer__item-link" href="#">
+              <svg width="20" height="20" class="social-icon">
+                <use href="./images/icon.svg#icon-facebook"></use>
+              </svg></a>
+          </li>
+          <li class="social-footer__item">
+            <a class="social-footer__item-link" href="#">
+              <svg width="20" height="20" class="social-icon">
+                <use href="./images/icon.svg#icon-linkedin2"></use>
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+      <div class="container newsletter">
+        <h4 class="newsletter__header">Zapisz się do newslettera</h4>
+        <form class="newsletter__form">
+          <label><input class="newsletter__input" input placeholder="E-mail" /></label>
+          <button type="button" class="newsletter__button">
+            Zapisz się
+            <svg width="24" height="24" class="social-icon">
+              <use href="./images/icon.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
