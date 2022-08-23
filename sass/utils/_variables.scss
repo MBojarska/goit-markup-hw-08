@@ -55,3 +55,33 @@ h2 {
   letter-spacing: 0.03em;
   padding-bottom: 50px;
 }
+
+
+.containter{
+  min-width: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width:768px) {
+  .containter {
+    max-width: 768px
+  }
+}
+@media screen and (min-width:1200px) {
+  .containter {
+    max-width: 1200px
+  }
+}
+
+.section {
+  padding: 0 31px;
+}
+
+// .container {
+//   width: 1200px;
+//   margin: 0 auto;
+// } 
+
+// .section {
+//   padding: 94px 0;
+// }

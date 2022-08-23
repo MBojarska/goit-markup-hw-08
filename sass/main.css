@@ -1,4 +1,82 @@
 @charset "UTF-8";
+*,
+*::before,
+*::after {
+  list-style: none;
+  font-style: normal;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --agency-blue: #2196f3;
+  --reg-white: #ffffff;
+  --agency-grey: #2f303a;
+  --agency-lightgrey: #f5f4fa;
+  --reg-black: #000000;
+  --agency-background-color: #e5e5e5;
+  --agency-mediumgrey: #757575;
+  --secondary-header-color: #212121;
+  --header-border: #ececec;
+  --borders: #eeeeee;
+  --agency-background: #202020;
+  --agency-svg-grey: #f5f4fa;
+  --agency-svg-background: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: var(--reg-white);
+  color: var(--secondary-header-color);
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--secondary-header-color);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+h2 {
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 50px;
+}
+
+.containter {
+  min-width: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .containter {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .containter {
+    max-width: 1200px;
+  }
+}
+.section {
+  padding: 0 31px;
+}
+
 .studio-top {
   font-family: "Raleway";
   font-style: normal;
@@ -8,15 +86,6 @@
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--reg-black);
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.section {
-  padding: 94px 0;
 }
 
 .contact {
@@ -140,7 +209,7 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-image: url(https://github.com/MBojarska/goit-hw-04/blob/main/images/background1.jpg?raw=true);
+  background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/background-min.jpg?raw=true);
   background-position: cover;
   max-width: 1600px;
   width: 100%;
@@ -149,10 +218,10 @@
 
 h1 {
   display: flex;
-  width: 696px;
-  height: 120px;
+  width: 365px;
+  height: 84px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
@@ -161,27 +230,68 @@ h1 {
   color: var(--reg-white);
 }
 
+@media screen and (min-width: 1200px) {
+  h1 {
+    width: 696px;
+    height: 120px;
+    font-size: 44px;
+  }
+}
 .title-background {
   height: 600px;
 }
 
-/*   
-    image-overlay */
 .page-title {
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 400px;
   background-color: var(--agency-background-color);
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-image: url(https://github.com/MBojarska/goit-hw-04/blob/main/images/background1.jpg?raw=true);
+  background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/background-min.jpg?raw=true);
   background-position: cover;
-  max-width: 1600px;
+  background-repeat: no-repeat;
   width: 100%;
+  max-width: 480px;
+  min-width: 320px;
   box-shadow: inset 0px 0px 300px 300px rgba(47, 48, 58, 0.4);
 }
 
+@media screen and (min-width: 768px) {
+  .page-title {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background-color: var(--agency-background-color);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/background-mid.jpg?raw=true);
+    background-position: cover;
+    background-repeat: no-repeat;
+    max-width: 768px;
+    width: 100%;
+    box-shadow: inset 0px 0px 300px 300px rgba(47, 48, 58, 0.4);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-title {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: var(--agency-background-color);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/background1.jpg?raw=true);
+    background-position: cover;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    width: 100%;
+    box-shadow: inset 0px 0px 300px 300px rgba(47, 48, 58, 0.4);
+  }
+}
 a {
   text-decoration: none;
 }
@@ -673,15 +783,14 @@ footer {
   pointer-events: none;
 }
 
-.client {
-  display: flex;
-  width: 170px;
-}
-
 .our-clients {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+.our-clients__client {
+  display: flex;
+  width: 170px;
 }
 .our-clients__icon {
   width: 170px;
@@ -866,62 +975,4 @@ figcaption {
   height: 110px;
   background-color: var(--reg-white);
   position: relative;
-}
-
-*,
-*::before,
-*::after {
-  list-style: none;
-  font-style: normal;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --agency-blue: #2196f3;
-  --reg-white: #ffffff;
-  --agency-grey: #2f303a;
-  --agency-lightgrey: #f5f4fa;
-  --reg-black: #000000;
-  --agency-background-color: #e5e5e5;
-  --agency-mediumgrey: #757575;
-  --secondary-header-color: #212121;
-  --header-border: #ececec;
-  --borders: #eeeeee;
-  --agency-background: #202020;
-  --agency-svg-grey: #f5f4fa;
-  --agency-svg-background: rgba(255, 255, 255, 0.1);
-}
-
-body {
-  background-color: var(--reg-white);
-  color: var(--secondary-header-color);
-  font-family: "Roboto";
-}
-
-a {
-  text-decoration: none;
-}
-
-a:visited {
-  color: var(--secondary-header-color);
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-h2 {
-  display: block;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding-bottom: 50px;
 }/*# sourceMappingURL=main.css.map */

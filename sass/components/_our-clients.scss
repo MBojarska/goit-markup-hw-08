@@ -1,14 +1,14 @@
-.client {
-  display: flex;
-  width: 170px;
-}
+
 
 .our-clients {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 
-
+&__client {
+  display: flex;
+  width: 170px;
+}
   &__icon {
     width: 170px;
     height: 92px;
