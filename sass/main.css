@@ -58,29 +58,8 @@ h2 {
   padding-top: 50px;
 }
 
-.containter {
-  min-width: 320px;
-  max-width: 100%;
-  padding: 30px auto;
-  margin: 30px auto;
-}
-
-@media screen and (min-width: 768px) {
-  .containter {
-    max-width: 768px;
-    margin: 30px auto;
-    padding: 30px auto;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .containter {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 30px auto;
-  }
-}
 .section {
-  padding: 0 31px;
+  padding: 0 auto;
 }
 
 .studio-top {
@@ -822,15 +801,17 @@ footer {
 
 .our-clients {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .our-clients__client {
   display: flex;
-  width: 170px;
+  width: 210px;
+  flex-basis: 210px;
 }
 .our-clients__icon {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1bb;
   border-radius: 8px;
@@ -850,6 +831,31 @@ footer {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .our-clients {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .our-clients__client {
+    flex-basis: 220px;
+  }
+  .our-clients__icon {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-clients {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .our-clients__icon {
+    width: 170px;
+    height: 92px;
+  }
+}
 .section--team {
   background-color: var(--agency-lightgrey);
 }
@@ -861,8 +867,8 @@ footer {
 }
 .our-team__card {
   display: flex;
-  width: 322px;
-  height: 460px;
+  width: 450px;
+  height: 622px;
   background-color: var(--reg-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -921,7 +927,9 @@ footer {
   }
   .our-team__card {
     display: flex;
-    flex-basis: 380px;
+    flex-basis: 360px;
+    width: 354px;
+    height: 536px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -932,6 +940,8 @@ footer {
   }
   .our-team__card {
     display: flex;
+    width: 322px;
+    height: 460px;
   }
 }
 .sort {
@@ -1034,4 +1044,26 @@ figcaption {
   height: 110px;
   background-color: var(--reg-white);
   position: relative;
+}
+
+.containter {
+  min-width: 320px;
+  max-width: 480px;
+  padding: 15px auto;
+  margin: 15px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .containter {
+    max-width: 768px;
+    margin: 0px auto;
+    padding: 15px auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .containter {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px auto;
+  }
 }/*# sourceMappingURL=main.css.map */

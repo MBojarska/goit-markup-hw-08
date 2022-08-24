@@ -1,0 +1,20 @@
+.containter{
+    min-width: 320px;
+    max-width: 480px;
+    padding: 15px auto;
+    margin: 15px auto;
+  }
+  @media screen and (min-width:768px) {
+    .containter {
+      max-width: 768px;
+      margin: 0px auto;
+      padding: 15px auto;
+    }
+  }
+  @media screen and (min-width:1200px) {
+    .containter {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 30px auto;
+    }
+  }

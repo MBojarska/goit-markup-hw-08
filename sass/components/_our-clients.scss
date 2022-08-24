@@ -1,16 +1,17 @@
-
-
 .our-clients {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 
-&__client {
-  display: flex;
-  width: 170px;
-}
+  &__client {
+    display: flex;
+    width: 210px;
+    flex-basis: calc(420px / 2);
+  }
+
   &__icon {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1bb;
     border-radius: 8px;
@@ -33,4 +34,32 @@
       cursor: pointer;
     }
   }
+}
+
+@media screen and (min-width: 768px){ 
+  .our-clients {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__client {
+      flex-basis: calc(660px / 3);
+    }
+    &__icon {
+    width: 226px;
+    height: 92px;}
+  }}
+
+
+@media screen and (min-width: 1200px) {
+  .our-clients {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  
+
+  &__icon {
+    width: 170px;
+    height: 92px;
+  }}
 }

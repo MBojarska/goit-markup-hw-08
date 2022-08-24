@@ -58,29 +58,8 @@ h2 {
 }
 
 
-.containter{
-  min-width: 320px;
-  max-width: 100%;
-  padding: 30px auto;
-  margin: 30px auto;
-}
-@media screen and (min-width:768px) {
-  .containter {
-    max-width: 768px;
-    margin: 30px auto;
-    padding: 30px auto;
-  }
-}
-@media screen and (min-width:1200px) {
-  .containter {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 30px auto;
-  }
-}
-
 .section {
-  padding: 0 31px;
+  padding: 0 auto;
 }
 
 // .container {
