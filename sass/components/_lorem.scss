@@ -1,6 +1,7 @@
 .lorem {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
 
   &__item {
     width: 270px;
@@ -26,6 +27,26 @@
 
   &__icon {
     display: flex;
+    justify-content: center;
     background-color: var(--agency-svg-grey);
+  }
+}
+@media screen and (min-width:768px){
+  .lorem{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__item {
+      flex-basis: calc(760px / 2)}
+  }
+}
+@media screen and (min-width:1200px){
+  .lorem{
+    display: flex;
+    flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+    // &__item {
+    //   display: flex;}
   }
 }

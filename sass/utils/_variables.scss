@@ -54,22 +54,28 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 
 .containter{
   min-width: 320px;
   max-width: 100%;
-  margin: 0 auto;
+  padding: 30px auto;
+  margin: 30px auto;
 }
 @media screen and (min-width:768px) {
   .containter {
-    max-width: 768px
+    max-width: 768px;
+    margin: 30px auto;
+    padding: 30px auto;
   }
 }
 @media screen and (min-width:1200px) {
   .containter {
-    max-width: 1200px
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px auto;
   }
 }
 

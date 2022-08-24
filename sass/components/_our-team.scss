@@ -73,6 +73,25 @@
     }
   }
 }
+@media screen and (min-width:768px){
+  .our-team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__card {
+      display: flex;
+      flex-basis: calc(760px / 2)}
+  }
+}
+@media screen and (min-width:1200px){
+  .our-team{
+    display: flex;
+    flex-direction: row;
+flex-wrap: nowrap;
+    &__card {
+      display: flex;}
+  }
+}
 
 // .our-team {
 //   display: flex;

@@ -55,22 +55,28 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .containter {
   min-width: 320px;
   max-width: 100%;
-  margin: 0 auto;
+  padding: 30px auto;
+  margin: 30px auto;
 }
 
 @media screen and (min-width: 768px) {
   .containter {
     max-width: 768px;
+    margin: 30px auto;
+    padding: 30px auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .containter {
     max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px auto;
   }
 }
 .section {
@@ -176,7 +182,7 @@ h2 {
 
 .lorem {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .lorem__item {
   width: 270px;
@@ -198,9 +204,28 @@ h2 {
 }
 .lorem__icon {
   display: flex;
+  justify-content: center;
   background-color: var(--agency-svg-grey);
 }
 
+@media screen and (min-width: 768px) {
+  .lorem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .lorem__item {
+    flex-basis: 380px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lorem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
 .page-title {
   display: flex;
   flex-direction: column;
@@ -255,6 +280,7 @@ h1 {
   width: 100%;
   max-width: 480px;
   min-width: 320px;
+  background-size: 480px 400px;
   box-shadow: inset 0px 0px 300px 300px rgba(47, 48, 58, 0.4);
 }
 
@@ -272,6 +298,7 @@ h1 {
     background-repeat: no-repeat;
     max-width: 768px;
     width: 100%;
+    background-size: 768px 400px;
     box-shadow: inset 0px 0px 300px 300px rgba(47, 48, 58, 0.4);
   }
 }
@@ -288,6 +315,7 @@ h1 {
     background-position: cover;
     background-repeat: no-repeat;
     max-width: 1600px;
+    background-size: 1600px 600px;
     width: 100%;
     box-shadow: inset 0px 0px 300px 300px rgba(47, 48, 58, 0.4);
   }
@@ -885,6 +913,27 @@ footer {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .our-team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .our-team__card {
+    display: flex;
+    flex-basis: 380px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .our-team__card {
+    display: flex;
+  }
+}
 .sort {
   display: flex;
   justify-content: center;
