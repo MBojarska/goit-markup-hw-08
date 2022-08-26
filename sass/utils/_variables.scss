@@ -28,6 +28,7 @@ body {
   background-color: var(--reg-white);
   color: var(--secondary-header-color);
   font-family: "Roboto";
+  align-items: center;
 }
 
 a {
@@ -60,6 +61,7 @@ h2 {
 
 .section {
   padding: 0 auto;
+  align-items: center;
 }
 
 // .container {
