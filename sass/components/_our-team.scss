@@ -115,7 +115,7 @@
 
     &__card {
       display: flex;
-      flex-basis: calc(100%/ 2);
+      // flex-basis: calc(100%/ 2);
       width: 354px;
       height: 536px;
     }
@@ -163,32 +163,33 @@
 
     &__picture {
       flex-basis: auto;
+      justify-content: space-between;
       width: 270px;
       height: 260px;
     }
     .--jd1{
-      background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/johndoe1sq.jpg?raw=true);
+      background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/jd1full.jpg?raw=true);
       background-position: cover;
       background-repeat: no-repeat;
       width: 270px;
       height: 260px;
     }
     .--jd{
-      background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/janedoesq.jpg?raw=true);
+      background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/jdfull.jpg?raw=true);
       background-position: cover;
       background-repeat: no-repeat;
       width: 270px;
       height: 260px;
     }
     .--jd2{
-      background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/johndoe2sq.jpg?raw=true);
+      background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/jd2full.jpg?raw=true);
       background-position: cover;
       background-repeat: no-repeat;
       width: 270px;
       height: 260px;
     }
     .--jd3{
-      background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/johndoe3sq.jpg?raw=true);
+      background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/jd3full.jpg?raw=true);
       background-position: cover;
       background-repeat: no-repeat;
       width: 270px;
