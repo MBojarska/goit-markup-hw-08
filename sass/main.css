@@ -941,7 +941,7 @@ footer {
 .our-clients__client {
   display: flex;
   width: 210px;
-  flex-basis: 210px;
+  flex-basis: 50%;
 }
 .our-clients__icon {
   width: 210px;
@@ -970,7 +970,7 @@ footer {
     flex-wrap: wrap;
   }
   .our-clients__client {
-    flex-basis: 220px;
+    flex-basis: 33.3333333333%;
   }
   .our-clients__icon {
     width: 226px;
@@ -1005,6 +1005,38 @@ footer {
   background-color: var(--reg-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.our-team__picture {
+  width: 100%;
+  height: 460px;
+}
+.our-team .--jd1 {
+  background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/johndoe1-min.jpg?raw=true);
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 460px;
+}
+.our-team .--jd {
+  background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/janedoe-min.jpg?raw=true);
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 460px;
+}
+.our-team .--jd2 {
+  background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/johndoe2-min.jpg?raw=true);
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 460px;
+}
+.our-team .--jd3 {
+  background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/johndoe3-min.jpg?raw=true);
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 460px;
 }
 .our-team__name {
   font-weight: 500;
@@ -1057,12 +1089,46 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .our-team__card {
     display: flex;
-    flex-basis: 360px;
+    flex-basis: 50%;
     width: 354px;
     height: 536px;
+  }
+  .our-team__picture {
+    width: 354px;
+    height: 374px;
+  }
+  .our-team .--jd1 {
+    background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/johndoe1-min.jpg?raw=true);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 460px;
+  }
+  .our-team .--jd {
+    background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/janedoemid.jpg?raw=true);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 460px;
+  }
+  .our-team .--jd2 {
+    background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/jd2-mid.jpg?raw=true);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 460px;
+  }
+  .our-team .--jd3 {
+    background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/jd3-mid.jpg?raw=true);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 460px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1071,9 +1137,15 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+  .our-team__picture {
+    flex-basis: auto;
+    width: 270px;
+    height: 260px;
+  }
   .our-team__card {
     display: flex;
-    width: 322px;
+    flex-basis: auto;
+    width: 270px;
     height: 460px;
   }
 }

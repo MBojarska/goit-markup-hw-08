@@ -7,7 +7,7 @@
   &__client {
     display: flex;
     width: 210px;
-    flex-basis: calc(420px / 2);
+    flex-basis: calc(100% / 2);
   }
 
   &__icon {
@@ -42,7 +42,7 @@
     flex-wrap: wrap;
 
     &__client {
-      flex-basis: calc(660px / 3);
+      flex-basis: calc(100%/ 3);
     }
     &__icon {
     width: 226px;
