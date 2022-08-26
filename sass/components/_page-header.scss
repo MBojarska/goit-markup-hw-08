@@ -1,3 +1,9 @@
+
+@media screen and (max-width: 767px) {
+  .page-header-desktop {
+    display: none;
+  }
+}
 .studio-top {
   font-family: "Raleway";
   font-style: normal;
@@ -113,6 +119,12 @@
       background: #2196f3;
       border-radius: 2px;
     }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
   }
 }
 
