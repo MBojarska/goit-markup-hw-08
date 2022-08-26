@@ -34,10 +34,13 @@
   .menu .link:focus {
     text-decoration: underline;
   }
-  
+  .menu-toggle-container{
+    display: flex;
+    justify-content: flex-end;
+  }
   .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
+    height: 40px;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,6 +52,25 @@
     border: none;
     border-radius: 50%;
     outline: none;
+
+  }
+  .menu-toggle:hover{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    & svg *{
+        fill: var(--agency-blue);
+            }
   }
   
   @media (min-width: 768px) {
@@ -73,7 +95,8 @@
     z-index: 999;
   
     transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);;
   }
   
   .menu-container.is-open {
