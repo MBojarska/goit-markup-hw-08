@@ -65,7 +65,7 @@ h2 {
 }
 
 .container {
-  max-width: 480px;
+  width: 480px;
   padding: 15px auto;
   margin: 15px auto;
 }
@@ -89,6 +89,14 @@ h2 {
     display: none;
   }
 }
+.page-header-desktop {
+  display: flex;
+}
+
+.page-top {
+  display: flex;
+}
+
 .studio-top {
   font-family: "Raleway";
   font-style: normal;
@@ -810,7 +818,7 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .what-we-do {
-    display: initial;
+    display: block;
   }
 }
 .what-we-do__header {
