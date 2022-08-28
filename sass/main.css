@@ -64,21 +64,21 @@ h2 {
   align-items: center;
 }
 
-.containter {
+.container {
   max-width: 480px;
   padding: 15px auto;
   margin: 15px auto;
 }
 
 @media screen and (min-width: 768px) {
-  .containter {
+  .container {
     width: 768px;
     margin: 0px auto;
     padding: 15px auto;
   }
 }
 @media screen and (min-width: 1200px) {
-  .containter {
+  .container {
     width: 1200px;
     margin: 30px auto;
     padding: 30px auto;
@@ -687,6 +687,7 @@ footer {
 
 .newsletter {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   width: 570px;
   margin-left: 78px;
@@ -705,8 +706,8 @@ footer {
 }
 .newsletter__form {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
   margin-top: 20px;
 }
@@ -737,9 +738,14 @@ footer {
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
+    flex-direction: row;
     height: 463px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+  }
+  .footer .newsletter {
+    display: flex;
+    align-items: flex-start;
   }
   .footer .newsletter__form {
     display: flex;
