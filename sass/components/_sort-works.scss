@@ -74,7 +74,18 @@
 .box {
   position: relative;
   overflow: hidden;
-
+  & img {width: 460px;
+  height: 294px;}
+&__picture{
+  width: 460px;
+  @each $portfolio in I, II, III, IV, V, VI, VII, VIII, IX {
+    .#{$portfolio}-min {
+      background-image: url('https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-min/port-#{$portfolio}.jpg?raw=true');
+    }
+  }
+  background-position: cover;
+  background-repeat: no-repeat;
+}
   &__overlay {
     position: absolute;
     bottom: 0;
