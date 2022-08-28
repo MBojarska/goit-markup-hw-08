@@ -139,6 +139,7 @@ footer {
 
 .newsletter {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   width: 570px;
   margin-left: 78px;
@@ -158,8 +159,8 @@ footer {
 
   &__form {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
     margin-top: 20px;
   }
@@ -196,11 +197,14 @@ footer {
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
+    flex-direction: row;
     height: 463px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     .newsletter {
+      display: flex;
+      align-items: flex-start;
       &__form {
         display: flex;
         flex-direction: column;
