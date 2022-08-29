@@ -14,41 +14,44 @@
 </head>
 
 <body class="portfolio">
-  <header class="portfolio-header">
-    <div class="container page-top">
-      <!--Logo w <header> i stopce to link z tekstem, a nie obraz.-->
-      <a href="/" class="webstudio-top"><span class="adress-footer__web">Web</span><span class="studio-top">Studio</span></a>
-      <nav>
-        <!-- Nawigacja do innych sekcji -->
-        <ul class="navigation">
-          <li class=" navigation__item"><a class="navigation__link" href="index.html">Agencja</a></li>
-          <li class=" navigation__item"><a class="navigation__link active" href="portfolio.html">Portfolio</a></li>
-          <li class=" navigation__item"><a class="navigation__link" href="#kontakt">Kontakt</a></li>
+  <header>
+    <section class="page-header-desktop">
+      <div class="container page-top">
+
+        <a href="/" class="webstudio-top"><span class="adress-footer__web">Web</span><span
+            class="studio-top">Studio</span></a>
+        <nav>
+
+          <ul class="navigation">
+            <li class=" navigation__item"><a class="navigation__link" href="index.html">Agencja</a></li>
+            <li class=" navigation__item"><a class="navigation__link active" href="portfolio.html">Portfolio</a></li>
+            <li class=" navigation__item"><a class="navigation__link" href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="contact">
+
+          <li>
+            <div class="contact__top">
+              <a class="contact__link" href="mailto:info@devstudio.com">
+                <svg width="16px" height="12px" class="contact__icon">
+                  <use href="./images/icon.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a>
+            </div>
+          </li>
+
+          <li>
+            <div class="contact__top">
+              <a class="contact__link" href="tel:+48111111111">
+                <svg width="10px" height="16px" class="contact__icon">
+                  <use href="./images/icon.svg#icon-smartphone"></use>
+                </svg>
+                +48 111 111 111</a>
+            </div>
+          </li>
         </ul>
-      </nav>
-      <ul class="contact">
-        <!-- Link do adresu e-mail  -->
-        <li>
-          <div class="contact__top">
-            <a class="contact__link" href="mailto:info@devstudio.com">
-              <svg width="16px" height="12px" class="contact__icon">
-                <use href="./images/icon.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a>
-          </div>
-        </li>
-        <!-- Link do numeru telefonu -->
-        <li>
-          <div class="contact__top">
-            <a class="contact__link" href="tel:+48111111111">
-              <svg width="10px" height="16px" class="contact__icon">
-                <use href="./images/icon.svg#icon-smartphone"></use>
-              </svg>
-              +48 111 111 111</a>
-          </div>
-        </li>
-      </ul>
-    </div>
+      </div>
+    </section>
   </header>
   <main>
     <section class="section">
@@ -68,9 +71,10 @@
                 <div class="box__overlay">
                   <p class="box__description">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone
-                    serwery konkurencji</p>                </div>
+                    serwery konkurencji</p>
+                  </div>
               <figure>
-                <img class="box__picture I"/>
+                <img class="works__picture I" />
 
                 <figcaption>
                   <h4>Technocrack</h4>
@@ -83,7 +87,7 @@
           <li class="works__item">
             <div class="box">
               <figure>
-                <img class="box__picture II"
+                <img class="works__picture II"
                  />
                 <div class="box__overlay">
                   <p class="box__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nobis minima reprehenderit asperiores
@@ -100,7 +104,7 @@
           <li class="works__item">
             <div class="box">
               <figure>
-                <img class="box__picture III" />
+                <img class="works__picture III" />
                 <div class="box__overlay">
                   <p class="box__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga repellendus nulla commodi error
                     facilis reiciendis quibusdam cumque ratione minus? Assumenda.</p>
@@ -116,7 +120,7 @@
           <li class="works__item">
             <div class="box">
               <figure>
-                <img class="box__picture IV"/>
+                <img class="works__picture IV"/>
                 <div class="box__overlay">
                   <p class="box__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum recusandae quam debitis reiciendis
                     aliquam voluptatibus totam aut voluptates ipsum quasi.</p>
@@ -132,7 +136,7 @@
           <li class="works__item">
             <div class="box">
               <figure>
-                <img class="box__picture V"/>
+                <img class="works__picture V"/>
                 <div class="box__overlay">
                   <p class="box__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iste aliquam enim recusandae
                     voluptatum soluta placeat debitis suscipit distinctio facere?</p>
@@ -148,7 +152,7 @@
           <li class="works__item">
             <div class="box">
               <figure>
-                <img class="box__picture VI"/>
+                <img class="works__picture VI"/>
                 <div class="box__overlay">
                   <p class="box__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magnam incidunt dolorum
                     dolores. Commodi adipisci culpa alias tempore odio atque.</p>
@@ -164,7 +168,7 @@
           <li class="works__item">
             <div class="box">
               <figure>
-                <img class="box__picture VII"/>
+                <img class="works__picture VII"/>
                 <div class="box__overlay">
                   <p class="box__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti mollitia sint ullam sequi,
                     dolores quos ipsa aperiam voluptatum nisi provident.</p>
@@ -180,7 +184,7 @@
           <li class="works__item">
             <div class="box">
               <figure>
-                <img class="box__picture VIII" />
+                <img class="works__picture VIII" />
                 <div class="box__overlay">
                   <p class="box__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum recusandae amet fugiat ab
                     cupiditate est saepe! A rerum doloremque similique.</p>
@@ -196,7 +200,7 @@
           <li class="works__item">
             <div class="box">
               <figure>
-                <img class="box__picture IX"/>
+                <img class="works__picture IX"/>
                 <div class="box__overlay">
                   <p class="box__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vel iste voluptatibus quod iusto
                     odio molestiae dignissimos laborum quibusdam itaque.</p>
