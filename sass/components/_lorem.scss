@@ -1,6 +1,8 @@
 .lorem {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
 
 
   &__item {
@@ -35,7 +37,9 @@
   .lorem{
     display: flex;
     flex-direction: row;
+    padding-bottom: 45px;
     flex-wrap: wrap;
+    justify-content: space-between;
     &__item {
       flex-basis: calc(760px / 2)}
   }

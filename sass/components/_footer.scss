@@ -45,7 +45,7 @@
   }
 
   &__web {
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -57,7 +57,7 @@
   }
 
   &__studio {
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -119,9 +119,9 @@ footer {
 .join-us {
   width: 206px;
   height: 86px;
-  // margin-left: 70px;
   padding-bottom: 20px;
   margin-right: 0;
+  margin-left: 0;
 
   & h4 {
     font-weight: 700;
@@ -139,10 +139,10 @@ footer {
 
 .newsletter {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   width: 570px;
-  margin-left: 78px;
+  margin-left: 0;
 
   &__header {
     font-weight: 700;
@@ -193,18 +193,27 @@ footer {
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     height: 463px;
     justify-content: center;
     align-items: flex-start;
 
+    .join-us {
+      width: 206px;
+      height: 86px;
+      padding-bottom: 20px;
+      margin-right: 0;
+      margin-left: 144px;
+    }
+
     .newsletter {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
+
       &__form {
         display: flex;
         flex-direction: column;
@@ -232,10 +241,10 @@ footer {
   }
 }
 
-
 @media screen and (min-width: 1200px) {
   .footer {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     align-items: flex-start;
     height: 252px;
@@ -256,10 +265,10 @@ footer {
       height: 92px;
     }
 
-&__form{
-  display: flex;
-  flex-direction: row;
-}
+    &__form {
+      display: flex;
+      flex-direction: row;
+    }
 
     &__input {
       display: flex;
@@ -273,5 +282,4 @@ footer {
       padding-left: 16px;
     }
   }
-
 }

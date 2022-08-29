@@ -18,6 +18,17 @@
   margin: 0;
   list-style: none;
 }
+.studio-top {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+  color: var(--reg-black);}
 
 @media (max-width: 767px) {
   .menu {
@@ -74,7 +85,7 @@
   outline: none;
 
   & svg * {
-    fill: var(--agency-blue);
+    fill: #2196f3;
   }
 }
 
@@ -113,7 +124,7 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: var(--secondary-header-color)
+  color: #212121;
 }
 
 .mobile-menu {
@@ -128,7 +139,7 @@
 .mobile-menu .link {
   display: flex;
   padding: 10px;
-  color: var(--secondary-header-color);
+  color: #212121;
   text-decoration: none;
   font-family: 'Roboto';
   font-style: normal;
@@ -138,7 +149,7 @@
   letter-spacing: 0.02em;
 
   &:hover {
-    color: var(--agency-blue);
+    color: #2196f3;
   }
 }
 
@@ -146,14 +157,17 @@
   display: flex;
   flex-direction: column;
   &__phone {
-    display: flex;
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
     /* identical to box height */
+    
     letter-spacing: 0.02em;
-    color: var(--agency-blue);
-
+    
+    color: #2196F3;
+    &:visited{
+      color: #2196F3;
+    }
   }
 
   &__mail {
@@ -166,20 +180,28 @@
     padding-top: 32px;
     margin-bottom: 64px;
   }
+
 }
 
 .mobile-social {
   display: flex;
+  align-items: center;
 
   &__link {
     font-weight: 500;
     font-size: 18px;
-    line-height: 1.22;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+    
     letter-spacing: 0.02em;
-    color: var(--agency-blue);
+    
+    color: #2196F3;
     padding-left: 10px;
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+    &:visited{
+      color: #2196F3;
+    }
     // &:nth-child(0) {
     //   padding-left: 0px;
     // }
