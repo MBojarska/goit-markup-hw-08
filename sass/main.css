@@ -1249,6 +1249,36 @@ footer {
   width: 450px;
   height: 460px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .our-team .--jd1 {
+    background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/johndoe1-min@2x.jpg?raw=true);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 460px;
+  }
+  .our-team .--jd {
+    background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/janedoe-min@2x.jpg?raw=true);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 460px;
+  }
+  .our-team .--jd2 {
+    background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/johndoe2-min@2x.jpg?raw=true);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 460px;
+  }
+  .our-team .--jd3 {
+    background-image: url(https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/our%20team/johndoe3-min@2x.jpg?raw=true);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 460px;
+  }
+}
 .our-team__name {
   font-weight: 500;
   font-size: 16px;
