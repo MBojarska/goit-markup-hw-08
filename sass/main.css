@@ -1498,6 +1498,35 @@ footer {
   background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-min/port-IX-min.jpg?raw=true");
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .I {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-min/port-I-min@2x.jpg?raw=true");
+  }
+  .II {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-min/port-II-min@2x.jpg?raw=true");
+  }
+  .III {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-min/port-III-min@2x.jpg?raw=true");
+  }
+  .IV {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-min/port-IV-min@2x.jpg?raw=true");
+  }
+  .V {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-min/port-V-min@2x.jpg?raw=true");
+  }
+  .VI {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-min/port-VI-min@2x.jpg?raw=true");
+  }
+  .VII {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-min/port-VII-min@2x.jpg?raw=true");
+  }
+  .VIII {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-min/port-VIII-min@2x.jpg?raw=true");
+  }
+  .IX {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-min/port-IX-min@2x.jpg?raw=true");
+  }
+}
 /* nakładka na projekty w portfolio */
 .box {
   position: relative;
@@ -1584,6 +1613,35 @@ figcaption {
     background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-mid/port-9-mid.jpg?raw=true");
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .I {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-mid/port-1-mid@2x.jpg?raw=true");
+  }
+  .II {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-mid/port-2-mid@2x.jpg?raw=true");
+  }
+  .III {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-mid/port-3-mid@2x.jpg?raw=true");
+  }
+  .IV {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-mid/port-4-mid@2x.jpg?raw=true");
+  }
+  .V {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-mid/port-5-mid@2x.jpg?raw=true");
+  }
+  .VI {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-mid/port-6-mid@2x.jpg?raw=true");
+  }
+  .VII {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-mid/port-7-mid@2x.jpg?raw=true");
+  }
+  .VIII {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-mid/port-8-mid@2x.jpg?raw=true");
+  }
+  .IX {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-mid/port-9-mid@2x.jpg?raw=true");
+  }
+}
 @media screen and (min-width: 1200px) {
   .works {
     display: flex;
@@ -1630,5 +1688,34 @@ figcaption {
   }
   .IX {
     background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-desk/port-9-desk.jpg?raw=true");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .I {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-desk/port-1-desk@2x.jpg?raw=true");
+  }
+  .II {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-desk/port-2-desk@2x.jpg?raw=true");
+  }
+  .III {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-desk/port-3-desk@2x.jpg?raw=true");
+  }
+  .IV {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-desk/port-4-desk@2x.jpg?raw=true");
+  }
+  .V {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-desk/port-5-desk@2x.jpg?raw=true");
+  }
+  .VI {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-desk/port-6-desk@2x.jpg?raw=true");
+  }
+  .VII {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-desk/port-7-desk@2x.jpg?raw=true");
+  }
+  .VIII {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-desk/port-8-desk@2x.jpg?raw=true");
+  }
+  .IX {
+    background-image: url("https://github.com/MBojarska/goit-markup-hw-08/blob/main/images/portfolio-desk/port-9-desk@2x.jpg?raw=true");
   }
 }/*# sourceMappingURL=main.css.map */
