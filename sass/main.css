@@ -67,7 +67,7 @@ h2 {
 .container {
   width: 480px;
   padding: 15px auto;
-  margin: 15px auto;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -630,6 +630,7 @@ button:hover, button:focus {
   letter-spacing: 0.03em;
   color: #fff;
   margin-top: 5px;
+  text-align: center;
 }
 .adress-footer__contact-link {
   border-radius: 50%;
@@ -655,6 +656,7 @@ button:hover, button:focus {
   display: block;
   padding-top: 60px;
   padding-left: 15px;
+  text-align: center;
 }
 .adress-footer__web {
   font-family: "Raleway";
@@ -721,31 +723,34 @@ footer {
 }
 
 .join-us {
+  display: block;
   width: 206px;
   height: 86px;
-  padding-bottom: 20px;
+  margin-bottom: 60px;
   margin-right: 0;
   margin-left: 0;
 }
 .join-us h4 {
+  display: inline-block;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   width: 200px;
   height: 30px;
-  display: block;
-  padding-top: 72px;
+  padding-top: 50px;
   color: #ffffff;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .newsletter {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 570px;
   margin-left: 0;
+  text-align: center;
+  margin-bottom: 15px;
 }
 .newsletter__header {
   font-weight: 700;
@@ -755,25 +760,30 @@ footer {
   width: 270px;
   height: 16px;
   display: block;
-  padding-top: 72px;
+  padding-top: 60px;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 .newsletter__form {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
   margin-top: 20px;
+  max-width: 570px;
 }
 .newsletter__input {
   background-color: #2f303a;
-  width: 450px;
+  min-width: 450px;
+  max-width: 570px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
+  margin: 0 auto;
 }
 .newsletter__button, .newsletter__button:hover, .newsletter__button:focus {
   font-weight: 700;
@@ -832,6 +842,26 @@ footer {
   }
 }
 @media screen and (min-width: 1200px) {
+  .adress-footer {
+    margin-right: 0;
+    width: 260px;
+  }
+  .adress-footer__contact-item {
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: #fff;
+    margin-top: 5px;
+    text-align: left;
+  }
+  .adress-footer__webstudio {
+    display: block;
+    padding-top: 60px;
+    padding-left: 15px;
+    text-align: left;
+  }
   .footer {
     display: flex;
     flex-wrap: nowrap;
@@ -860,7 +890,6 @@ footer {
     display: flex;
     flex-direction: row;
     background-color: #2f303a;
-    width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1146,6 +1175,7 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  padding-bottom: 60px;
 }
 .our-clients__client {
   display: flex;

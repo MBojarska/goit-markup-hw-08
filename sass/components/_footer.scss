@@ -10,6 +10,7 @@
     letter-spacing: 0.03em;
     color: #fff;
     margin-top: 5px;
+    text-align: center;
   }
 
   &__contact-link {
@@ -42,6 +43,7 @@
     display: block;
     padding-top: 60px;
     padding-left: 15px;
+    text-align: center;
   }
 
   &__web {
@@ -117,23 +119,25 @@ footer {
 }
 
 .join-us {
+  display: block;
   width: 206px;
   height: 86px;
-  padding-bottom: 20px;
+  margin-bottom: 60px;
   margin-right: 0;
   margin-left: 0;
 
   & h4 {
+    display: inline-block;
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     width: 200px;
     height: 30px;
-    display: block;
-    padding-top: 72px;
+    padding-top: 50px;
     color: #ffffff;
     padding-bottom: 20px;
+    text-align: center;
   }
 }
 
@@ -141,8 +145,9 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 570px;
   margin-left: 0;
+  text-align: center;
+  margin-bottom: 15px;
 
   &__header {
     font-weight: 700;
@@ -152,27 +157,32 @@ footer {
     width: 270px;
     height: 16px;
     display: block;
-    padding-top: 72px;
+    padding-top: 60px;
     color: #ffffff;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   &__form {
     display: flex;
-    align-items: flex-start;
+align-items: center;
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
+    max-width: 570px;
   }
 
   &__input {
     background-color: #2f303a;
-    width: 450px;
+    min-width: 450px;
+    max-width: 570px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left: 16px;
+    margin: 0 auto;
   }
 
   &__button,
@@ -194,6 +204,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+
   .footer {
     display: flex;
     flex-wrap: wrap;
@@ -242,6 +253,27 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+  .adress-footer {
+    margin-right: 0;
+    width: 260px;
+  
+    &__contact-item {
+      padding-left: 15px;
+      font-size: 14px;
+      line-height: 24px;
+      /* or 171% */
+      letter-spacing: 0.03em;
+      color: #fff;
+      margin-top: 5px;
+      text-align:left;
+    }
+    &__webstudio {
+      display: block;
+      padding-top: 60px;
+      padding-left: 15px;
+      text-align: left;
+    }
+  }
   .footer {
     display: flex;
     flex-wrap: nowrap;
@@ -274,7 +306,6 @@ footer {
       display: flex;
       flex-direction: row;
       background-color: #2f303a;
-      width: 358px;
       height: 50px;
       border: 1px solid rgba(255, 255, 255, 0.3);
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
